@@ -1,5 +1,7 @@
 # AoC21
 
+[![AUTO-README](https://github.com/Reynouts/AoC21/actions/workflows/readme.yml/badge.svg?branch=master)](https://github.com/Reynouts/AoC21/actions/workflows/readme.yml)
+
 ## [--- Day 1: Sonar Sweep ---](http://adventofcode.com/2021/day/1)
 We are back! Easy first day. Second part had something to do with
 the sum of a sliding window and compare it with the next. The inner elements
