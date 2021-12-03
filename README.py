@@ -13,7 +13,7 @@ def main():
             print(url)
             resp = requests.get(url)
             title = re.findall("--- Day \d+:.+ ---", resp.text)[0]
-            readme += "\n##[" + title + "](" + url + ")\n\n"
+            readme += "\n## [" + title + "](" + url + ")\n\n"
 
     with open('README.md', 'w') as f:
         f.write(readme)
