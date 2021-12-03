@@ -16,3 +16,15 @@ submarine. Tried to make it generic making a dictionary mapping from
 instruction to function. Probably a lot harder to understand than the
 easy solution with some duplicate code. Let's see if this submarine
 manual will return in later puzzles!
+
+##[--- Day 3: Binary Diagnostic ---](http://adventofcode.com/2021/day/3)
+Needed to refresh some numpy knowledge for this one. Had to use my lunchbreak
+to solve the second part, because I didn't have enough time in the morning
+before work. Took it quite literally and squeezed in some recursion to shrink
+the data matrix without any problems. I guess it was a straightforward puzzle,
+without the need to optimize anything. 
+
+But this is mostly the case in the first days and suddenly
+the compelxity explodes! For now, I am really happy with the amount of time
+I need to invest in the puzzles to solve them. There is enough room to improve
+your code if you have the time, but it is not a necessity.
