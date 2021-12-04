@@ -30,3 +30,6 @@ But this is mostly the case in the first days and suddenly
 the compelxity explodes! For now, I am really happy with the amount of time
 I need to invest in the puzzles to solve them. There is enough room to improve
 your code if you have the time, but it is not a necessity.
+
+## [--- Day 4: Giant Squid ---](http://adventofcode.com/2021/day/4)
+
