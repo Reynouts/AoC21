@@ -33,3 +33,6 @@ your code if you have the time, but it is not a necessity.
 
 ## [--- Day 4: Giant Squid ---](http://adventofcode.com/2021/day/4)
 
+
+## [--- Day 5: Hydrothermal Venture ---](http://adventofcode.com/2021/day/5)
+
