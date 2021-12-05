@@ -32,7 +32,13 @@ I need to invest in the puzzles to solve them. There is enough room to improve
 your code if you have the time, but it is not a necessity.
 
 ## [--- Day 4: Giant Squid ---](http://adventofcode.com/2021/day/4)
+Just had some limited time this weekend to solve the puzzles. In this puzzle
+some numpy skills would be very beneficial, but I am not fluent enough with
+the module to use it easily and I didn't have stable internet access, so I 
+couldn't use it in full advantage. This made it quite a bit harder, but it did work out.
 
 
 ## [--- Day 5: Hydrothermal Venture ---](http://adventofcode.com/2021/day/5)
-
+Puzzle of today: get all points on a line on a grid. Count all overlapping lines
+in the grid. Some juggling with y=ax+b. Glad I could finish the puzzles within the
+day!
