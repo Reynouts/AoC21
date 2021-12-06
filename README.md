@@ -42,3 +42,6 @@ couldn't use it in full advantage. This made it quite a bit harder, but it did w
 Puzzle of today: get all points on a line on a grid. Count all overlapping lines
 in the grid. Some juggling with y=ax+b. Glad I could finish the puzzles within the
 day!
+
+## [--- Day 6: Lanternfish ---](http://adventofcode.com/2021/day/6)
+
