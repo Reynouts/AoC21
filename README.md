@@ -44,4 +44,11 @@ in the grid. Some juggling with y=ax+b. Glad I could finish the puzzles within t
 day!
 
 ## [--- Day 6: Lanternfish ---](http://adventofcode.com/2021/day/6)
+The population of Laternfish is growing * growing. For part two a naive "simulate
+every fish in the population"-way wouldn't cut it. So I used "bins" for the 9 types/
+ages of the fishes and used a deque as datastructure to handle to needed rotation.
+This resulted in a quick execution time and low space requirement.
 
+Also I added a simple workflow to this repository to automatically decorate this
+readme file with the correct names of the days and links to the puzzle. Just to get
+a python script working in workflow.
