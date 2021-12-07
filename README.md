@@ -52,3 +52,6 @@ This resulted in a quick execution time and low space requirement.
 Also I added a simple workflow to this repository to automatically decorate this
 readme file with the correct names of the days and links to the puzzle. Just to get
 a python script working in workflow.
+
+## [--- Day 7: The Treachery of Whales ---](http://adventofcode.com/2021/day/7)
+
