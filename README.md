@@ -54,4 +54,10 @@ readme file with the correct names of the days and links to the puzzle. Just to 
 a python script working in workflow.
 
 ## [--- Day 7: The Treachery of Whales ---](http://adventofcode.com/2021/day/7)
-
+Finding a minimum in a search space. Tried to be smart and calculated the median and do
+a left/right search for those points and see if it found a better solution. Turned out
+the median is already optimal for part 1.
+For part 2 I started from the average instead of the median, but didn't no if it would
+work for every input, so just rewrote it to brute-force, which is a bit safer maybe and
+also less code. And with this size of input it doesn't matter, brute-forcing both parts
+are quick and give you the correct answer. So less reason to bother about it..
