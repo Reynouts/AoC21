@@ -63,4 +63,12 @@ also less code. And with this size of input it doesn't matter, brute-forcing bot
 are quick and give you the correct answer. So less reason to bother about it..
 
 ## [--- Day 8: Seven Segment Search ---](http://adventofcode.com/2021/day/8)
+Quite a difficult puzzle to understand at first for me (except for part1). I started trying 
+decoding all the segments itself (so: what letter should be on the top line, etc), but got 
+some headache to solve it (I guess it is possible this way) and after work looked again and 
+found out I didn't need that information to answer the question and it was a lot easier to 
+eliminate and just compare the set of letters.
+
+I've seen some very nice and clean solutions, but mine isn't one of them! No time to refactor
+or overthink this. 16 stars and counting!
 
