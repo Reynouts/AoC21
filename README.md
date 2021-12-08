@@ -61,3 +61,6 @@ For part 2 I started from the average instead of the median, but didn't no if it
 work for every input, so just rewrote it to brute-force, which is a bit safer maybe and
 also less code. And with this size of input it doesn't matter, brute-forcing both parts
 are quick and give you the correct answer. So less reason to bother about it..
+
+## [--- Day 8: Seven Segment Search ---](http://adventofcode.com/2021/day/8)
+
