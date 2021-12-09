@@ -74,4 +74,9 @@ or overthink this. 16 stars and counting!
 
 
 ## [--- Day 9: Smoke Basin ---](http://adventofcode.com/2021/day/9)
+Classic AoC puzzle: reading in a grid, checking neighbours and do something like a floodfill 
+algorithm. Unfortunately I don't have enough time to really elaborate on problems, coding
+style, performance and stuff like that like in earlier years. But happy to have some time
+to solve the problems.
 
+Note to self: make a library for this kind of stuff, think I coded this 20 times before for AoC.
