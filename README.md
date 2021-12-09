@@ -72,3 +72,6 @@ eliminate and just compare the set of letters.
 I've seen some very nice and clean solutions, but mine isn't one of them! No time to refactor
 or overthink this. 16 stars and counting!
 
+
+## [--- Day 9: Smoke Basin ---](http://adventofcode.com/2021/day/9)
+
