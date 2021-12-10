@@ -82,4 +82,8 @@ to solve the problems.
 Note to self: make a library for this kind of stuff, think I coded this 20 times before for AoC.
 
 ## [--- Day 10: Syntax Scoring ---](http://adventofcode.com/2021/day/10)
-
+Parse opening and closing symbols! Checking if the given "code" is incorrect and doing some
+scoring. Tried to solve it quickly before going to work, but ended up with a bug that
+I couldn't fix in time. So had to wait till lunch to get that out of my code. I forgot to
+strip the newline characters with reading my file, which I caught in the first part of the
+puzzle, but forgot in a letter if-statement. Took a while before I spotted that one.
