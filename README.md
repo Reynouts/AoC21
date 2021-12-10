@@ -80,3 +80,6 @@ style, performance and stuff like that like in earlier years. But happy to have 
 to solve the problems.
 
 Note to self: make a library for this kind of stuff, think I coded this 20 times before for AoC.
+
+## [--- Day 10: Syntax Scoring ---](http://adventofcode.com/2021/day/10)
+
