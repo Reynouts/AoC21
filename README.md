@@ -87,3 +87,6 @@ scoring. Tried to solve it quickly before going to work, but ended up with a bug
 I couldn't fix in time. So had to wait till lunch to get that out of my code. I forgot to
 strip the newline characters with reading my file, which I caught in the first part of the
 puzzle, but forgot in a letter if-statement. Took a while before I spotted that one.
+
+## [--- Day 11: Dumbo Octopus ---](http://adventofcode.com/2021/day/11)
+
