@@ -89,7 +89,14 @@ strip the newline characters with reading my file, which I caught in the first p
 puzzle, but forgot in a letter if-statement. Took a while before I spotted that one.
 
 ## [--- Day 11: Dumbo Octopus ---](http://adventofcode.com/2021/day/11)
-
+First kind of Game of Life puzzle of the year! Always fun and made me put some helpers
+in my AoC package (reading grid and getting neighbours). Was expecting a harder second
+part, but you could still simulate it and get the right answer (at least with my input)
 
 ## [--- Day 12: Passage Pathing ---](http://adventofcode.com/2021/day/12)
-
+Today was also straight forward (just use a tree traversal method to get all paths) and
+some extra datastructure and conditions to get the second part, but again quick enough
+to get the answer for part 2! Usually the weekend puzzles are quite a bit harder, but
+this time the first 12 days are all relatively easy. Maybe we will get a very steep curve
+next week.. Let's see. I kinda like this small time investment, without too much braindraining
+math puzzles.
