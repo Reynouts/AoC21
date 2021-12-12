@@ -90,3 +90,6 @@ puzzle, but forgot in a letter if-statement. Took a while before I spotted that 
 
 ## [--- Day 11: Dumbo Octopus ---](http://adventofcode.com/2021/day/11)
 
+
+## [--- Day 12: Passage Pathing ---](http://adventofcode.com/2021/day/12)
+
