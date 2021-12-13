@@ -102,4 +102,14 @@ next week.. Let's see. I kinda like this small time investment, without too much
 math puzzles.
 
 ## [--- Day 13: Transparent Origami ---](http://adventofcode.com/2021/day/13)
+Folding a grid, until some characters appear! The pixel characters come back every now and
+then in Advent of Code. Some people made patterns for every pixel character and use "pattern"
+recognition to solve this automation step. The last time I wanted to use some OCR to automate it.
+Something like using a hammer to kill a fly, but seemed fun nevertheless.
 
+So this time I used opencv with pytesseract to do the OCR. Of course this doesn't work out of the
+box, because it are really small "pictures" (only 5x5 pixels, but you never know what it will be
+next time!). So I upscale the image a lot and add some filter to smooth the edges. This way tesseract
+can do its job. Took some fiddling, but validated it with 3 other inputs. 
+
+Fun stuff!
