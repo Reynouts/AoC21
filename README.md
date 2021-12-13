@@ -100,3 +100,6 @@ to get the answer for part 2! Usually the weekend puzzles are quite a bit harder
 this time the first 12 days are all relatively easy. Maybe we will get a very steep curve
 next week.. Let's see. I kinda like this small time investment, without too much braindraining
 math puzzles.
+
+## [--- Day 13: Transparent Origami ---](http://adventofcode.com/2021/day/13)
+
