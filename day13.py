@@ -11,7 +11,7 @@ def ocr_pixelchars(arr, width, height, image_path='ocr.png'):
         import pytesseract
     except ImportError:
         print("Missing dependencies for OCR (PIL, cv2, matplotlib, scipy, pytesseract)")
-        return arr.tostring()
+        return npa_tostring(arr)
     upscaled_image = np.asarray(Image.fromarray(arr).resize([width*5, height*5], resample=Image.NEAREST))
     smoothed_image = gaussian_filter(upscaled_image, 1.7)
     plt.imsave(image_path, smoothed_image)
