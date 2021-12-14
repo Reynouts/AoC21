@@ -114,5 +114,14 @@ can do its job. Took some fiddling, but validated it with 3 other inputs.
 
 Fun stuff!
 
+![Generated output picture](day13.png)
+
 ## [--- Day 14: Extended Polymerization ---](http://adventofcode.com/2021/day/14)
+A string which grows so quickly, your memory won't survive this one.
+
+Finally a brute-force naïve solution won't cut it for part two. After some minutes observing the output, I couldn't 
+figure out a pattern which I could use and needed to come up with a solution the programmers-way. Of course a dictionary 
+provided the right datastructure to keep track of the pairs that were present in the string. Just some fiddling with 
+counting the letters after it: you should counter the fact that the individual start and end letters are not in two 
+pairs, all the other occurences of letters are in two pairs.
 
