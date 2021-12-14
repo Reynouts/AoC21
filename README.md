@@ -113,3 +113,6 @@ next time!). So I upscale the image a lot and add some filter to smooth the edge
 can do its job. Took some fiddling, but validated it with 3 other inputs. 
 
 Fun stuff!
+
+## [--- Day 14: Extended Polymerization ---](http://adventofcode.com/2021/day/14)
+
