@@ -128,3 +128,6 @@ pairs, all the other occurences of letters are in two pairs.
 
 ## [--- Day 15: Chiton ---](http://adventofcode.com/2021/day/15)
 
+
+## [--- Day 16: Packet Decoder ---](http://adventofcode.com/2021/day/16)
+
