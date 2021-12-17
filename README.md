@@ -127,4 +127,37 @@ pairs, all the other occurences of letters are in two pairs.
 
 
 ## [--- Day 15: Chiton ---](http://adventofcode.com/2021/day/15)
+Pathfinding with Dijkstra! Like the Game Of Life and BFS/DFS puzzles, each year there is a
+pathfinding puzzles with weighted edges. This time A* is not really necessary, because you always
+move from one corner to the oppossite corner, so Dijkstra will do. But I just reused a A* implementation
+I made some time ago (and made it fit to the puzzle..). Still not generic enough for real graphs (just grids).
 
+Part two needed some extension of the given grid, which took me a bit too long. In retrospect I should have used numpy
+for this, which makes it really easy. I moved some of my methods to my aoc "library", but I should refactor that, extend
+it and generalise it to make it really reusable for new puzzles. But aoc needs to be fun, so I postpone that last part
+until further notice...
+
+Most unhappy with my code this day, but "real" work needs to be done before Christmas, so no time to be too picky.
+
+## [--- Day 16: Packet Decoder ---](http://adventofcode.com/2021/day/16)
+Is this the new IntCodeComputer that we will be building this year? If so: I will need to refactor this really
+thoroughly! Became a big mess, after I rewrote it all to figure out were my bugs came from. I could not figure it out,
+but eventually I found out my hex to binary method threw away leading zero's (of course, why wouldn't you?), which 
+screws up the whole chain. And my input resulted in a case with a leadning zero. Fortunately there was one small 
+testcase in the puzzle which failed (due to the same problem). But before I found out that was the problem, I discarded
+my whole program multiple times.
+
+Well, now it works, but really bad code. So please, don't come back in later days!
+
+## [--- Day 17: Trick Shot ---](http://adventofcode.com/2021/day/17)
+Easy day, which reminded me of the old DOS game "Gorillas" made in Q-Basic which I played a lot on my father's IBM
+AT 5170. Aim and shoot your banana!
+
+[![Gorillas](https://i.ytimg.com/vi/UDc3ZEKl-Wc/hqdefault.jpg)](https://www.youtube.com/watch?v=UDc3ZEKl-Wc)
+
+For todays puzzle you needed to find the angle which hits a target box and gets as high as possible. Just brute force
+this within the rules. The only part which requires some extra thinking is how to setup the ranges to make it work for
+every scenario and don't let it loop too long. 
+
+I guess this easy puzzle will lead us to a big time investment this weekend... maybe a sequel on day 16 (still not
+refactored that one..)

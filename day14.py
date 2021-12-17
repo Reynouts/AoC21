@@ -39,7 +39,7 @@ def main():
             rules[key] = val
 
     pairdict = template_to_dict(template)
-    for c in range(40):
+    for c in range(1000000000 ):
         pairdict = cycledict(rules, pairdict)
         if c == 9:
             print(f"part1: {calc(pairdict, template)}")

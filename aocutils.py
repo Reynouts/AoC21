@@ -1,6 +1,7 @@
 import os
 from aocd import get_data
 import time
+import heapq
 
 
 def get_input(day, token="\n"):
@@ -32,16 +33,15 @@ def get_dictgridfromfile(file):
     return cells
 
 
-def get_neighbours(cell, cells, diag=True):
-    neighbours = []
-    heading = ((1, 0), (-1, 0), (0, 1), (0, -1))
-    if diag:
-        heading = heading + ((1, 1), (-1, -1), (-1, 1), (1, -1))
-    for h in heading:
-        pos = cell[0] + h[0], cell[1] + h[1]
-        if pos in cells:
-            neighbours.append(pos)
-    return neighbours
+def get_gridfromfile(file):
+    cells = []
+    with open(file, 'r') as f:
+        for i, line in enumerate(f.readlines()):
+            cells.append([])
+            for j, cell in enumerate(line):
+                if cell != "\n":
+                    cells[-1].append(int(cell))
+    return cells
 
 
 def timeit(method):
@@ -58,3 +58,64 @@ def timeit(method):
         return result
 
     return timed
+
+
+
+#Pathfinding stuff
+# (not very generic, works for fully connected grids, should add graph class with neigbours method)
+class Node:
+    def __init__(self, value, point):
+        self.value = value
+        self.point = point
+        self.parent = None
+        self.H = 0
+        self.G = 0
+
+    def __lt__(self, other):
+        return self.G < other.G
+
+
+def a_star_grid(start, goal, grid, dist=distance):
+    openlist = []
+    heapq.heappush(openlist, (0, start))
+    parents = {start: None}
+    cost = {start: 0}
+
+    while openlist:
+        current = heapq.heappop(openlist)[1]
+        if current == goal:
+            path = []
+            while current != start:
+                path.append(current)
+                current = parents[current]
+            path.append(start)
+            path.reverse()
+            return path, cost
+        for nb_pos in get_neighbours(current.point, grid, False):
+            nb = grid[nb_pos[0]][nb_pos[1]]
+            new_cost = cost[current] + nb.value
+            if nb not in cost or new_cost < cost[nb]:
+                cost[nb] = new_cost
+                priority = new_cost + dist(nb.point, goal.point)
+                heapq.heappush(openlist, (priority, nb))
+                parents[nb] = current
+    # no path found
+    return [], 0
+
+
+def get_neighbours(cell, cells, diag=True):
+    neighbours = []
+    heading = ((1, 0), (-1, 0), (0, 1), (0, -1))
+    if diag:
+        heading = heading + ((1, 1), (-1, -1), (-1, 1), (1, -1))
+    for h in heading:
+        pos = cell[0] + h[0], cell[1] + h[1]
+        if type(cells) is dict:
+            if pos in cells:
+                neighbours.append(pos)
+        else:
+            width = len(cells)
+            height = len(cells[0])
+            if (0 <= pos[0] < width) and (0 <= pos[1] < height):
+                neighbours.append((pos[0],pos[1]))
+    return neighbours
