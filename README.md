@@ -131,3 +131,6 @@ pairs, all the other occurences of letters are in two pairs.
 
 ## [--- Day 16: Packet Decoder ---](http://adventofcode.com/2021/day/16)
 
+
+## [--- Day 17: Trick Shot ---](http://adventofcode.com/2021/day/17)
+
