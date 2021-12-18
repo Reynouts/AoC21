@@ -163,4 +163,14 @@ I guess this easy puzzle will lead us to a big time investment this weekend... m
 refactored that one..)
 
 ## [--- Day 18: Snailfish ---](http://adventofcode.com/2021/day/18)
+Reading of this puzzle took more time than the average coding time of last days, it was a tough one to get through.
+A binary tree would be a useful datastructure to solve this "nested" snailfishes problem, but I didn't bother and didn't
+even want to use a list. I just did string manipulations to keep track of the "reduced snailtrail" and juggled a bit 
+with the digits. It resulted in ugly code (man.. did I really commit this code to a public repo...?), but it was quite 
+good for debugging and seeing what happened.
 
+For part 2 I made some weird mistake, which I thought had something to do with my big explode method. After getting some
+extra testcases from Roland, I figured out I made a dumb error in calculating the maximum magnitude for all pairs. Well,
+at least I solved it within the day!
+
+Definitely the puzzle which took me the most time, but fortunately not too difficult to solve. Happy days! 
