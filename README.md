@@ -161,3 +161,6 @@ every scenario and don't let it loop too long.
 
 I guess this easy puzzle will lead us to a big time investment this weekend... maybe a sequel on day 16 (still not
 refactored that one..)
+
+## [--- Day 18: Snailfish ---](http://adventofcode.com/2021/day/18)
+
