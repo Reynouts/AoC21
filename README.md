@@ -174,3 +174,6 @@ extra testcases from Roland, I figured out I made a dumb error in calculating th
 at least I solved it within the day!
 
 Definitely the puzzle which took me the most time, but fortunately not too difficult to solve. Happy days! 
+
+## [--- Day 19: Beacon Scanner ---](http://adventofcode.com/2021/day/19)
+
