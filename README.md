@@ -176,7 +176,25 @@ at least I solved it within the day!
 Definitely the puzzle which took me the most time, but fortunately not too difficult to solve. Happy days! 
 
 ## [--- Day 19: Beacon Scanner ---](http://adventofcode.com/2021/day/19)
+That was a tough one for me! Took me from 10pm 4 hours straight on and I already tried some things earlier this day. 
+Well, just finished in time for the next puzzle. Didn't want to give up on my goal to solve every puzzle within the day
+(or 24 hours after release..). 
 
+I followed a path which I wasn't sure it would work, so I debugged a lot and after a while I threw it away and started 
+again from scratch. To see which (reoriented) scanner matched another scanner, I check all the distances between all 
+the points from scanner 1 to scanner 2. If there are 12 points exactly the same distance away (defined by the puzzle's
+rules), we (probably) have a match and that is immediately the translation vector for the points (and the scanner). I
+coded the orientation part first quite "hardcoded", but refactored it to a cleaner (but a more difficult to understand) 
+solution.
+
+After that I merge the points from scanner 2 to scanner 1. Rinse and repeat until all scanners are in the merged
+scanner. The amount of beacons in the merged scanner is the answer for part 1. Part 2 was was easy this way, because I 
+already knew to location of the scanners relative to the first scanner by this method.
+
+Advent of Code takes my sleep!!
 
 ## [--- Day 20: Trench Map ---](http://adventofcode.com/2021/day/20)
-
+Easy evolving grid with one "gotcha": the outer cells can change throughout the evolution. So you need to keep track of
+the default outer value and after that it's easy. There wasn't a testcase which described this, so it was hard to know
+what was going on at first, also because of the lack of testcases in the example. But I guess that was part of the fun
+for this day.

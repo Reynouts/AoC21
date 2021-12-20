@@ -23,6 +23,7 @@ def distance(p1, p2):
     return abs(p1[0] - p2[0]) + abs(p1[1] - p2[1])
 
 
+
 def get_dictgridfromfile(file):
     cells = {}
     with open(file, 'r') as f:
@@ -42,6 +43,18 @@ def get_gridfromfile(file):
                 if cell != "\n":
                     cells[-1].append(int(cell))
     return cells
+
+
+def print_griddict(griddict, frame, default="."):
+    res = ""
+    for i in range(frame[0], frame[1]):
+        for j in range(frame[2], frame[3]):
+            if (i, j) in griddict:
+                res += griddict[(i, j)]
+            else:
+                res += default
+        res += "\n"
+    print(res)
 
 
 def timeit(method):
