@@ -1,7 +1,6 @@
 def get_binary_sliding_window(middle, cells, outer):
     result = ""
-    heading = ((-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 0), (0, 1), (1, -1), (1, 0), (1, 1))
-    for h in heading:
+    for h in ((-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 0), (0, 1), (1, -1), (1, 0), (1, 1)):
         pos = middle[0] + h[0], middle[1] + h[1]
         if pos in cells:
             result += cells[pos]
@@ -15,7 +14,7 @@ def evolve(cells, frame, outer, algo):
     for i in range(frame[0] - 1, frame[1] + 1):
         for j in range(frame[2] - 1, frame[3] + 1):
             new_cells[(i, j)] = algo[int(get_binary_sliding_window((i, j), cells, outer), 2)]
-    return new_cells, [frame[0] - 1, frame[1] + 1, frame[2] - 1, frame[3] + 1]
+    return new_cells, (frame[0] - 1, frame[1] + 1, frame[2] - 1, frame[3] + 1)
 
 
 def main():
@@ -27,11 +26,10 @@ def main():
     cells = {}
     for i, line in enumerate(input):
         for j, cell in enumerate(line):
-            if cell != "\n":
-                if cell == "#":
-                    cells[(i, j)] = "1"
-                else:
-                    cells[(i, j)] = "0"
+            if cell == "#":
+                cells[(i, j)] = "1"
+            else:
+                cells[(i, j)] = "0"
 
     frame = [0, len(input), 0, len(input[0])]
     outer = "0"
@@ -39,7 +37,7 @@ def main():
         cells, frame = evolve(cells, frame, outer, algo)
         if algo[0] == "1" and algo[-1] == "0":
             outer = str((int(outer)+1)%2)
-        elif algo[0] == "#":
+        elif algo[0] == "1":
             outer = "1"
         else:
             outer = "0"
