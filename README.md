@@ -177,3 +177,6 @@ Definitely the puzzle which took me the most time, but fortunately not too diffi
 
 ## [--- Day 19: Beacon Scanner ---](http://adventofcode.com/2021/day/19)
 
+
+## [--- Day 20: Trench Map ---](http://adventofcode.com/2021/day/20)
+
