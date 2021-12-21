@@ -198,3 +198,6 @@ Easy evolving grid with one "gotcha": the outer cells can change throughout the 
 the default outer value and after that it's easy. There wasn't a testcase which described this, so it was hard to know
 what was going on at first, also because of the lack of testcases in the example. But I guess that was part of the fun
 for this day.
+
+## [--- Day 21: Dirac Dice ---](http://adventofcode.com/2021/day/21)
+
