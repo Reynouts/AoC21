@@ -2,6 +2,7 @@ import os
 from aocd import get_data
 import time
 import heapq
+import re
 
 
 def get_input(day, token="\n"):
@@ -12,6 +13,10 @@ def get_input(day, token="\n"):
 def get_file(day, token="\n"):
     with open('day{}.txt'.format(day), 'r') as f:
         return f.read().split(token)
+
+def get_digits_from_input(day):
+    with open('day{}.txt'.format(day), 'r') as f:
+        return list(map(int, (re.findall("\d+", f.read()))))
 
 
 def write_input(day):

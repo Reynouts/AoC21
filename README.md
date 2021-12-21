@@ -200,4 +200,7 @@ what was going on at first, also because of the lack of testcases in the example
 for this day.
 
 ## [--- Day 21: Dirac Dice ---](http://adventofcode.com/2021/day/21)
-
+Fun little dice game, which you need some smart grouping of the problem to solve it or some caching. I used both for 
+part two. Eventually I didn't need caching because I group the three dice rolls in one and multiply the paths with
+the amount of possibilities in this group, which results in a 18s runtime without caching and around 40ms runtime with
+caching (lru vs own dict doesn't matter that much).

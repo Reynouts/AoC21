@@ -1,3 +1,6 @@
+import aocutils
+
+
 def get_binary_sliding_window(middle, cells, outer):
     result = ""
     for h in ((-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 0), (0, 1), (1, -1), (1, 0), (1, 1)):
@@ -9,34 +12,24 @@ def get_binary_sliding_window(middle, cells, outer):
     return result
 
 
-def evolve(cells, frame, outer, algo):
-    new_cells = {}
-    for i in range(frame[0] - 1, frame[1] + 1):
-        for j in range(frame[2] - 1, frame[3] + 1):
-            new_cells[(i, j)] = algo[int(get_binary_sliding_window((i, j), cells, outer), 2)]
-    return new_cells, (frame[0] - 1, frame[1] + 1, frame[2] - 1, frame[3] + 1)
+def evolve(cells, frame, outer, algo, expand):
+    return {(i, j): algo[int(get_binary_sliding_window((i, j), cells, outer), 2)]
+                for i in range(-expand, frame[0]+expand)
+                for j in range(-expand, frame[1]+expand)}
 
 
+@aocutils.timeit
 def main():
     with open("day20.txt", 'r') as f:
-        algo, input = f.read().split("\n\n")
-    input = input.splitlines()
-    algo = ["1" if c == "#" else "0" for c in algo]
-
-    cells = {}
-    for i, line in enumerate(input):
-        for j, cell in enumerate(line):
-            if cell == "#":
-                cells[(i, j)] = "1"
-            else:
-                cells[(i, j)] = "0"
-
-    frame = [0, len(input), 0, len(input[0])]
+        algo, input = f.read().replace("#", "1").replace(".", "0").split("\n\n")
+        input = input.splitlines()
+    cells = {(y, x): cell for y, line in enumerate(input) for x, cell in enumerate(line)}
+    frame = [len(input), len(input[0])]
     outer = "0"
     for i in range(50):
-        cells, frame = evolve(cells, frame, outer, algo)
+        cells = evolve(cells, frame, outer, algo, i+1)
         if algo[0] == "1" and algo[-1] == "0":
-            outer = str((int(outer)+1)%2)
+            outer = str((int(outer) + 1) % 2)
         elif algo[0] == "1":
             outer = "1"
         else:
