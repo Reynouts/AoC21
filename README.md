@@ -204,3 +204,6 @@ Fun little dice game, which you need some smart grouping of the problem to solve
 part two. Eventually I didn't need caching because I group the three dice rolls in one and multiply the paths with
 the amount of possibilities in this group, which results in a 18s runtime without caching and around 40ms runtime with
 caching (lru vs own dict doesn't matter that much).
+
+## [--- Day 22: Reactor Reboot ---](http://adventofcode.com/2021/day/22)
+
