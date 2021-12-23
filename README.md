@@ -207,3 +207,6 @@ caching (lru vs own dict doesn't matter that much).
 
 ## [--- Day 22: Reactor Reboot ---](http://adventofcode.com/2021/day/22)
 
+
+## [--- Day 23: Amphipod ---](http://adventofcode.com/2021/day/23)
+
