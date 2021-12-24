@@ -210,3 +210,6 @@ caching (lru vs own dict doesn't matter that much).
 
 ## [--- Day 23: Amphipod ---](http://adventofcode.com/2021/day/23)
 
+
+## [--- Day 24: Arithmetic Logic Unit ---](http://adventofcode.com/2021/day/24)
+
