@@ -206,13 +206,35 @@ the amount of possibilities in this group, which results in a 18s runtime withou
 caching (lru vs own dict doesn't matter that much).
 
 ## [--- Day 22: Reactor Reboot ---](http://adventofcode.com/2021/day/22)
-
+Difficulty increases this day! We need to find intersections of cubes and try to keep track of which points are on (or
+turned off again). There are big cubes, small cubes and I don't know how many times they could overlap. First intuïtion
+was to subtract the intersection off-cube from the on-cube by subdividing the on-cube in smaller cubes and "delete" the
+intersecting cubes, but this became hairy quite fast. So I "layered" the intersecting cubes, to phase out the on (or 
+off cube). This way no subdividing is necessary. Definately not an easy one.
 
 ## [--- Day 23: Amphipod ---](http://adventofcode.com/2021/day/23)
-
+Loved this one, but didn't solve it programmatically (yet). Just implemented it as a console game, keep track of the 
+score and previous states (to easy undo) and played around to get the right answers! Easy this way, progamatically
+probably a bit trickier to get a pathfinding algorithm with constaints. Maybe later.. but I feel more for making this
+console game more complete :-D
 
 ## [--- Day 24: Arithmetic Logic Unit ---](http://adventofcode.com/2021/day/24)
+Implemented the operations and tried to find some logic in the output, but that didn't went anywhere. Decomposed the
+input and made a bit more sense, but still nowhere near an answer. But wait, there are not 14 different "patterns" but
+only 2 with different constants. Hmm, there is something in that. Don't feel like it to assemble this by hand in excel.
 
+-- revisited on day 25 -- Unfortunately couldn't finish it within 24 hours. So I didn't complete my objective on this 
+day. But this can be done with hand and paper. Didn't feel to do it that way and went down the rabbit hole and made a
+more "generic" solution (probably won't work on all inputs, not sure). 
 
 ## [--- Day 25: Sea Cucumber ---](http://adventofcode.com/2021/day/25)
+Nice classic AoC puzzle to end this year. Loved this one, but didn't spend too much time on it, cause I had to do day
+24 still. This was a nice one for a visualisation! But have to put that on the list again for
+next year. 
 
+It was a great year! Easy start in the first weeks and from day 19 a shift, which cost me a lot of time and
+sleep. Enjoyed the stories, classic AoC puzzles, braindrain reading, struggling with debugging, discussions about the
+most performant code in the first days (and really caring about it in later days) and the private leaderboards (because
+I can't compete with the global leaderboard; I won't set an alarm anymore, because I know I'm too slow.)
+
+See you in 2022!!
