@@ -2,9 +2,9 @@ name: AUTO-README
 
 # Controls when the workflow will run
 on:
-  schedule:
+  #schedule:
     # run every day when a new puzzle is available
-    - cron:  '3 5 * * *'
+  #  - cron:  '3 5 * * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
